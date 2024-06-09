@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Twitter</title>
+</head>
+<body>
+    <h1>Web3 Twitter</h1>
+    <form action="/tweet" method="post">
+        <label for="message">Твит:</label>
+        <input type="text" id="message" name="message">
+        <input type="hidden" name="timestamp" value="{{ time.time() }}">
+        <button type="submit">Отправить</button>
+    </form>
+    <a href="/tweets">Посмотреть твиты</a>
+</body>
+</html>
